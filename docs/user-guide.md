@@ -1,22 +1,21 @@
-# GDE V1 User Guide
+# CGU V1 User Guide
 
-GDE is organized around the life of an NCAA 14 dynasty, not a collection of disconnected menus. NCAA remains the game where you play, advance, and save; GDE helps you understand, plan, and safely complete supported dynasty-management work.
+CGU is organized around the life of an NCAA 14 dynasty, not a collection of disconnected menus. NCAA remains the game where you play, advance, and save; CGU helps you understand, plan, and safely complete supported dynasty-management work.
 
-> **The native-write rule:** Before every GDE workflow that changes NCAA-native data, save in NCAA, exit the dynasty, close RPCS3, sync the closed save in GDE, preview and apply the action, relaunch RPCS3, reload and verify, then save in NCAA. Read-only tools do not need this sequence.
+> **The native-write rule:** Before every CGU workflow that changes NCAA-native data, save in NCAA, exit the dynasty, close RPCS3, sync the closed save in CGU, preview and apply the action, relaunch RPCS3, reload and verify, then save in NCAA. Read-only tools do not need this sequence.
 
 ## A. Installation and initial setup
 
-Install GDE, then launch **College Gridiron Universe**. In **Import / Dynasty Sync**, select the parent RPCS3 `savedata` directory—not a temporary extraction and not an incomplete individual save. Choose the discovered dynasty and sync it.
+Install CGU, then launch **College Gridiron Universe**. In **Import / Dynasty Sync**, select the parent RPCS3 `savedata` directory—not a temporary extraction and not an incomplete individual save. Choose the discovered dynasty and sync it.
 
-Confirm the team, season context, and roster shown by GDE match NCAA before using any writeback-capable workflow. GDE stores its own history under your Windows user-data root; see [Backup, Restore, and Upgrade](backup-restore-upgrade.md).
+Confirm the team, season context, and roster shown by CGU match NCAA before using any writeback-capable workflow. CGU stores its own history under your Windows user-data root; see [Backup, Restore, and Upgrade](backup-restore-upgrade.md).
 
-[SCREENSHOT: Import / Dynasty Sync selection]
 
 ## B. Starting a dynasty
 
-Create and save the dynasty in NCAA 14 / College Football Revamped first. If you use a custom roster, load it before creating the dynasty. Close RPCS3, then perform the first GDE sync.
+Create and save the dynasty in NCAA 14 / College Football Revamped first. If you use a custom roster, load it before creating the dynasty. Close RPCS3, then perform the first CGU sync.
 
-You may use a supported display-season setting in GDE for presentation, but GDE does not claim to rewrite NCAA's native year mechanics. Treat NCAA's saved dynasty as the source for on-field progression and GDE as the companion for supported management and history.
+You may use a supported display-season setting in CGU for presentation, but CGU does not claim to rewrite NCAA's native year mechanics. Treat NCAA's saved dynasty as the source for on-field progression and CGU as the companion for supported management and history.
 
 ## C. First-season preseason
 
@@ -26,7 +25,7 @@ Use the Offseason Decision Center to see shortages, graduating exposure, and can
 
 ## D. Initial Portal
 
-The **Initial Portal** occurs only in the first preseason. GDE uses an Initial Portal Staging Pool to organize candidates while you make the opening roster decisions.
+The **Initial Portal** occurs only in the first preseason. CGU uses an Initial Portal Staging Pool to organize candidates while you make the opening roster decisions.
 
 - Staged players are temporary, not permanent extra roster slots.
 - Staging must resolve to **zero** before normal preseason/redshirt decisions.
@@ -51,25 +50,24 @@ Reserve players are outside the active native 70 and cannot be redshirted again.
 
 First season: clear Initial Portal staging first, then make Reserve decisions. Later seasons: Reserve is part of normal offseason reconciliation, not a second redshirt or a permanent holding list.
 
-[SCREENSHOT: Development Reserve roster screen]
 
 ## F. Native redshirts
 
 Normal NCAA redshirts remain separate from Development Reserve. Use the supported redshirt workflow only for an eligible active-roster player and only after the required save/exit/sync sequence. Do not try to redshirt a Reserve player; Reserve has already consumed that player's redshirt.
 
-After applying a supported native change, reload NCAA and verify before saving. If GDE refuses a change, preserve the current save and follow the refusal/recovery message.
+After applying a supported native change, reload NCAA and verify before saving. If CGU refuses a change, preserve the current save and follow the refusal/recovery message.
 
 ## G. Regular season
 
-Play and advance in NCAA as usual. At meaningful checkpoints, save, exit the dynasty, close RPCS3, and sync GDE. This keeps roster, recruiting, history, and analytics aligned with the actual NCAA save.
+Play and advance in NCAA as usual. At meaningful checkpoints, save, exit the dynasty, close RPCS3, and sync CGU. This keeps roster, recruiting, history, and analytics aligned with the actual NCAA save.
 
 Use read-only history, analytics, team-resume, Program Momentum, and roster views during the season to understand trends. They do not modify NCAA.
 
 ## H. Recruiting
 
-GDE supports the accepted recruiting lifecycle and guarded recruiting actions. Use the recruiting workflow to evaluate needs, scouting context, offers, visits, and eligible commitment options; do not infer that every displayed data point is writable.
+CGU supports the accepted recruiting lifecycle and guarded recruiting actions. Use the recruiting workflow to evaluate needs, scouting context, offers, visits, and eligible commitment options; do not infer that every displayed data point is writable.
 
-For any recruiting action that GDE identifies as native writeback-capable, use the standard closed-save workflow, review the preview, apply once, reload NCAA, verify, and save. GDE fails closed when the expected source state, identity, or relationship is unsafe.
+For any recruiting action that CGU identifies as native writeback-capable, use the standard closed-save workflow, review the preview, apply once, reload NCAA, verify, and save. CGU fails closed when the expected source state, identity, or relationship is unsafe.
 
 ## I. Junior scouting and regional scouts
 
@@ -87,7 +85,7 @@ Use them as one input when judging needs and transfer strategy, not as a replace
 
 Use the CFP/postseason workspace to review the accepted postseason picture and supported projections. NCAA remains authoritative for games and results. Any supported NCAA-facing postseason action follows the same closed-save, preview, verify, and save workflow.
 
-Do not advance or manipulate a live NCAA save while RPCS3 is open and a GDE writeback is pending.
+Do not advance or manipulate a live NCAA save while RPCS3 is open and a CGU writeback is pending.
 
 ## L. National Championship Rewards
 
@@ -106,15 +104,14 @@ Rules:
 - An unused reward expires after its applicable season.
 - A Championship Commitment recruit must still qualify.
 - Program Momentum is automatic and separate.
-- GDE does not modify native prestige.
+- CGU does not modify native prestige.
 
 Choose a reward in its owning workflow. Championship Commitment is a guarded recruiting opportunity, not a guarantee that overrides normal qualification.
 
-[SCREENSHOT: Championship Rewards selection]
 
 ## M. Offseason portal
 
-Beginning at the **end of Year 1**, the portal is part of the normal offseason cycle. GDE reconciles the NCAA-native roster, sequences supported transfers, and preserves class/redshirt context and immediate eligibility where the accepted workflow supports it.
+Beginning at the **end of Year 1**, the portal is part of the normal offseason cycle. CGU reconciles the NCAA-native roster, sequences supported transfers, and preserves class/redshirt context and immediate eligibility where the accepted workflow supports it.
 
 Consider roster needs, Program Momentum, coaching movement, and source/destination roster health. Do not use portal planning to exceed the 70/10/80 limits. A proposed transfer is not complete until the owning workflow validates it and you verify the outcome in NCAA.
 
@@ -126,7 +123,7 @@ The Assistant Coach Market is the supported workflow for accepted coordinator/st
 
 Use player-development information to understand likely direction, role, and roster value across seasons. Development Reserve preserves a player's progression during its one-season use; Championship Development Edge is a time-bounded reward choice, not an endlessly stacking boost.
 
-Do not treat analysis or a projected overall as a native edit. GDE distinguishes planning information from supported writeback workflows.
+Do not treat analysis or a projected overall as a native edit. CGU distinguishes planning information from supported writeback workflows.
 
 ## P. Returning Development Reserve players
 
@@ -146,7 +143,6 @@ It evaluates target-position fit with:
 
 The projected target-position OVR is an explainable estimate based on target skills, body/athletic context, role impact, team need, and career projection. It is not a fixed overall delta or a claim to recreate NCAA's internal overall formula.
 
-[SCREENSHOT: Position Change Lab target analysis]
 
 ## R. Offseason Decision Center
 
@@ -158,36 +154,35 @@ It is a projected-roster workspace. Recommendations are explainable and hand off
 
 The What-If Simulator answers: **“What happens if I make these decisions?”** Build multi-action scenarios using transfers, cuts, Reserve, recruiting/portal additions, and credible position changes. Compare before/after counts, health, needs, and decisions; save scenarios for later comparison.
 
-**SIMULATION DOES NOT MODIFY NCAA OR AUTHORITATIVE GDE STATE.** A saved scenario becomes stale when the real roster changes and must be recalculated before relying on it.
+**SIMULATION DOES NOT MODIFY NCAA OR AUTHORITATIVE CGU STATE.** A saved scenario becomes stale when the real roster changes and must be recalculated before relying on it.
 
-[SCREENSHOT: What-If scenario comparison]
 
 ## T. Roster reconciliation and cuts
 
-Before a new season, reconcile active roster, Reserve, portal movement, graduating players, and position need. Use supported cut/reconciliation workflows only after saving NCAA and closing RPCS3. GDE validates the intended source state and preserves a managed recovery path.
+Before a new season, reconcile active roster, Reserve, portal movement, graduating players, and position need. Use supported cut/reconciliation workflows only after saving NCAA and closing RPCS3. CGU validates the intended source state and preserves a managed recovery path.
 
 Never use cuts to make a short roster look compliant: position health and legal maximums matter more than forcing a count of 70.
 
 ## U. Starting the next season
 
-When portal, Reserve, reconciliation, recruiting, and supported preseason steps are resolved, verify the NCAA roster and season state, save in NCAA, and begin the next year. Sync GDE after meaningful NCAA changes to preserve history and keep planning information current.
+When portal, Reserve, reconciliation, recruiting, and supported preseason steps are resolved, verify the NCAA roster and season state, save in NCAA, and begin the next year. Sync CGU after meaningful NCAA changes to preserve history and keep planning information current.
 
 ## V. History, analytics, and team resume
 
-GDE keeps long-term team/player history, analytics, and resume context so decisions are not made from one screen or one week alone. These views are read-only. They help explain progress, performance, and program direction without changing the save.
+CGU keeps long-term team/player history, analytics, and resume context so decisions are not made from one screen or one week alone. These views are read-only. They help explain progress, performance, and program direction without changing the save.
 
 ## W. Backups, recovery, and upgrades
 
-GDE keeps persistent user data separate from the application, makes automatic backups, supports `.gdebackup` export/import, and performs explicit schema migration. Automatic backups retain the newest 10; manual and pre-migration backups are preserved outside that rolling limit.
+CGU keeps persistent user data separate from the application, makes automatic backups, supports `.gdebackup` export/import, and performs explicit schema migration. Automatic backups retain the newest 10; manual and pre-migration backups are preserved outside that rolling limit.
 
-For a normal update, install the newer release, launch GDE, allow it to back up/migrate/validate existing data, then confirm your selected dynasty. Use export/import to move computers or create an extra safety copy. See [Backup, Restore, and Upgrade](backup-restore-upgrade.md).
+For a normal update, install the newer release, launch CGU, allow it to back up/migrate/validate existing data, then confirm your selected dynasty. Use export/import to move computers or create an extra safety copy. See [Backup, Restore, and Upgrade](backup-restore-upgrade.md).
 
 ## X. Troubleshooting and safe rollback
 
-- If GDE reports that RPCS3 is running, close it before sync, restore, or writeback.
+- If CGU reports that RPCS3 is running, close it before sync, restore, or writeback.
 - If a native action is refused, do not alter the source save to work around the check. Review the message and sync the correct closed save.
 - If an applied result is not what you expected after reloading NCAA, stop, do not continue advancing, and use the recorded backup/rollback path.
-- If GDE cannot open data, preserve the database and logs; it intentionally fails closed rather than creating a blank replacement.
+- If CGU cannot open data, preserve the database and logs; it intentionally fails closed rather than creating a blank replacement.
 - If a dynasty is not found, select the parent `savedata` directory and confirm the complete save is readable.
 
 For data recovery and migration details, use the [Backup, Restore, and Upgrade guide](backup-restore-upgrade.md). For intentionally deferred scope, see [Known Limitations](known-limitations.md).

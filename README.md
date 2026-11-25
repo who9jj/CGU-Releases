@@ -1,84 +1,98 @@
-﻿# Gridiron Dynasty Engine — NCAA 14 V1
+# College Gridiron Universe (CGU)
 
-**Gridiron Dynasty Engine (GDE)** is a local-first dynasty companion for **NCAA Football 14** and **College Football Revamped** running in RPCS3.
-
-NCAA 14 remains the on-field game. GDE expands the dynasty-management experience around it with modern roster management, recruiting, transfers, coaching, postseason tools, long-term history, and carefully guarded save integration.
+College Gridiron Universe is a Windows desktop companion for NCAA Football 14
+and College Football Revamped dynasties in RPCS3. Keep playing football in NCAA;
+use CGU to manage the wider dynasty experience with roster planning, recruiting,
+transfers, staff tools, postseason planning, history and guarded save integration.
 
 ## Download
 
-Download the latest installer from the **Releases** section of this repository.
+[Download the original CGU V1.0.0 installer](https://github.com/who9jj/CGU-Releases/releases/download/cgu-v1.0.0/CGU.Setup.exe)
+or [view its release page](https://github.com/who9jj/CGU-Releases/releases/tag/cgu-v1.0.0).
 
-Current release:
+This public repository distributes official production installers and user
+documentation. Private UAT builds are distributed separately and are not public
+production releases. The original V1.0.0 remains available under its original tag
+and filename. No new production version is announced by this documentation.
 
-**Gridiron Dynasty Engine NCAA 14 V1.0.0**
+The original `CGU.Setup.exe` is 1,033,882,220 bytes. Its verified GitHub asset
+SHA-256 at the preparation audit is:
 
-No separate Python or SQLite installation is required.
+```text
+b5002d603ec6e53492805023d63069c9f60b1c8b0bb70d35b9608c970bf11584
+```
 
-## Major V1 Features
+To compare your downloaded file in PowerShell:
 
-- Dynasty import and synchronization
-- Modern transfer portal workflows
-- Immediate transfer eligibility
-- Development Reserve — up to 10 players beyond the native active roster
-- Recruiting lifecycle enhancements
-- Junior scouting and regional scouting
-- Program Momentum and Portal Attractiveness
-- Team Captains
-- Assistant Coach Market
-- CFP and postseason management
-- Championship Rewards
-- Position Change Lab and Career Projection
-- Offseason Decision Center / Roster Compliance Manager
-- Dynasty What-If Simulator
-- Long-term history and analytics
-- Automatic backups
-- Export / import and restore
-- Database migration and recovery
-- Multi-dynasty and long-dynasty support
+```powershell
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\CGU.Setup.exe'
+```
 
-## Start Here
+## Features
+
+- Dynasty import, synchronization and career history.
+- Recruiting, transfer portal and roster planning workflows.
+- Development Reserve, staff and captain tools.
+- Position Change Lab, career projection and dynasty what-if analysis.
+- CFP/postseason planning and Championship Rewards.
+- Backups, restore, database migration and recovery tools.
+
+Availability and limits depend on the installed release. Read the
+[V1 release notes](docs/release-notes-v1.md) and
+[known limitations](docs/known-limitations.md) before changing an existing career.
+
+## Requirements and installation
+
+Use a Windows x64 PC capable of running your supported RPCS3/NCAA Football 14 or
+College Football Revamped setup, plus a compatible dynasty save. No separate
+Python or SQLite installation is needed for the packaged CGU application. The
+game, emulator and game files are separate from CGU. Allow room for the installer,
+application and complete dynasty backups.
+
+1. Back up the complete existing CGU profile and the NCAA dynasty. For an upgrade,
+   follow the [backup, restore and upgrade guide](docs/backup-restore-upgrade.md).
+2. Download the installer from the official release page and compare its checksum.
+3. Close CGU and RPCS3, then run the installer. Keep an existing installation's
+   upgrade destination and retained user data; do not reset a profile to upgrade.
+4. Launch College Gridiron Universe and connect the parent RPCS3 `savedata` folder.
+5. Select the intended dynasty and Sync. Confirm the correct school/career before
+   using any action that changes NCAA data.
+
+For native changes, save and exit the dynasty and close RPCS3 first. Use CGU's
+supported preview/confirmation workflow, then reload the dynasty in NCAA and
+verify the result. Read-only analysis does not itself publish native changes.
+
+## Documentation
 
 - [Quick Start](docs/quick-start.md)
-- [Full User Guide](docs/user-guide.md)
-- [Backup, Restore, and Upgrade Guide](docs/backup-restore-upgrade.md)
-- [V1 Release Notes](docs/release-notes-v1.md)
+- [User Guide](docs/user-guide.md)
+- [Backup, Restore and Upgrade](docs/backup-restore-upgrade.md)
 - [Known Limitations](docs/known-limitations.md)
 - [Community Overview](docs/community-overview.md)
+- [V1 Release Notes](docs/release-notes-v1.md)
 
-## Safe NCAA Writeback
+## CGU presentation previews
 
-For GDE actions that modify NCAA-native dynasty data:
+These retained CGU screenshots show synthetic playoff demonstrations. They
+illustrate the product's existing presentation; they are not screenshots of a
+newly released installer or evidence of completed native gameplay.
 
-1. Save the dynasty in NCAA.
-2. Exit the dynasty.
-3. Close RPCS3.
-4. Sync the closed save in GDE.
-5. Preview and apply the supported action.
-6. Relaunch RPCS3.
-7. Reload the dynasty and verify the result.
-8. Save again in NCAA.
+![CGU synthetic 12-team playoff demonstration](screenshots/cgu-playoff-12-teams.png)
 
-Read-only tools such as Position Change Lab and Dynasty What-If do not modify the NCAA save.
+![CGU synthetic 24-team playoff demonstration](screenshots/cgu-playoff-24-teams.png)
 
-## V1 Validation
+## Version history and support
 
-Final automated regression:
+| Public version | Release |
+| --- | --- |
+| Original V1.0.0 | [cgu-v1.0.0](https://github.com/who9jj/CGU-Releases/releases/tag/cgu-v1.0.0) |
 
-**3,088 passed, 1 skipped**
+[Browse official releases](https://github.com/who9jj/CGU-Releases/releases).
+Historical guides retain the terminology and limits of the release they describe.
+CGU runs locally with its bundled frontend; a hosted preview is a separate
+development surface. Unsupported native operations remain unavailable.
 
-The V1 release also passed fresh-install, upgrade/migration, backup/restore, corruption recovery, multi-dynasty, 60-season preservation, browser, and packaged-runtime acceptance.
-
-## Requirements
-
-- Windows PC
-- RPCS3
-- NCAA Football 14 / College Football Revamped
-- Compatible NCAA 14 dynasty save
-
-## Version
-
-**GDE NCAA 14 V1.0.0**
-
-Database schema: **1**
-
-See [Known Limitations](docs/known-limitations.md) for intentionally deferred future work.
+[Report a bug](https://github.com/who9jj/CGU-Releases/issues/new)
+with your CGU version, Windows version, the affected feature, reproduction steps,
+expected/actual behavior and a sanitized error message. Keep NCAA saves, personal
+databases, private profile directories and credentials out of public issues.
